@@ -28,7 +28,13 @@ conda activate books
 
 # Install the package
 echo "Installing the package"
-pip install .
+pip install -r requirements.txt
+
+# Convert Jupyter notebook to Python script
+jupyter nbconvert --to script "Books Recommender.ipynb" --output "Books_Recommender"
+
+# Run the Python script
+python Books_Recommender.py
 
 # Create Streamlit configuration directory
 mkdir -p ~/.streamlit/
