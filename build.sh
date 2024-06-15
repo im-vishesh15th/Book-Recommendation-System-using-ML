@@ -39,8 +39,9 @@ cat <<EOL > ~/.streamlit/config.toml
 port = $PORT
 enableCORS = false
 headless = true
+enableXsrfProtection = false
 EOL
 
 # Run the Streamlit app
 echo "Running Streamlit app"
-streamlit run src/app.py
+streamlit run app.py
