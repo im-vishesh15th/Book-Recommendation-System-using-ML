@@ -42,6 +42,4 @@ headless = true
 enableXsrfProtection = false
 EOL
 
-# Run the Streamlit app
-echo "Running Streamlit app"
-streamlit run app.py
+
