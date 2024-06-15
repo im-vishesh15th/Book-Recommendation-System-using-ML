@@ -34,13 +34,12 @@ pip install .
 mkdir -p ~/.streamlit/
 
 # Create Streamlit configuration file
-echo "\
-[server]\n\
-port = $PORT\n\
-enableCORS = false\n\
-headless = true\n\
-\n\
-" > ~/.streamlit/config.toml
+cat <<EOL > ~/.streamlit/config.toml
+[server]
+port = $PORT
+enableCORS = false
+headless = true
+EOL
 
 # Run the Streamlit app
 echo "Running Streamlit app"
