@@ -26,10 +26,22 @@ conda create -n books python=3.7.10 -y
 echo "Activating Conda environment"
 conda activate books
 
-# Install dependencies
-echo "Installing dependencies"
-pip install -r requirements.txt
+# Install the package
+echo "Installing the package"
+pip install .
+
+# Create Streamlit configuration directory
+mkdir -p ~/.streamlit/
+
+# Create Streamlit configuration file
+echo "\
+[server]\n\
+port = $PORT\n\
+enableCORS = false\n\
+headless = true\n\
+\n\
+" > ~/.streamlit/config.toml
 
 # Run the Streamlit app
 echo "Running Streamlit app"
-streamlit run app.py --server.port $PORT
+streamlit run src/app.py
