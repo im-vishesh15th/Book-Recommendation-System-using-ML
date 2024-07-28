@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 # Variables
-REPO_NAME = "Books-Recommender-System-Using-Machine-Learning"
-AUTHOR_USER_NAME = "entbappy"
+REPO_NAME = "Book-Recommendation-System-using-ML"
+AUTHOR_USER_NAME = "im-vishesh15th"
 SRC_REPO = "src"
 LIST_OF_REQUIREMENTS = ['streamlit', 'numpy', 'pandas', 'scikit-learn', 'jupyter', 'matplotlib', 'seaborn']
 
@@ -17,7 +17,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
-    author_email="entbappy73@gmail.com",
+    author_email="vishesh15th@gmail.com",
     packages=find_packages(where=SRC_REPO),
     package_dir={"": SRC_REPO},
     license="MIT",
