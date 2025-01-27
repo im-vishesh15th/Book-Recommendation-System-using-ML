@@ -1,11 +1,11 @@
 ### dependency
-streamlit
-numpy
+streamlit==1.25.0
+numpy==1.21.2
+pandas==1.3.3
 matplotlib
 seaborn
-pandas 
-jupyter
 scikit-learn
+jupyter
 
 ### local packages -
 -e . 
