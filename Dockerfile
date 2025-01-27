@@ -9,7 +9,7 @@ COPY requirements.txt .
 COPY setup.py .
 
 # Install any needed dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Install additional dependencies if needed (e.g., Jupyter and Conda)
 RUN apt-get update && apt-get install -y \
